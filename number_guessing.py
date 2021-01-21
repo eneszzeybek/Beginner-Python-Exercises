@@ -6,13 +6,12 @@ Created on Sun Jan 10 15:09:26 2021
 """
 
 import numpy as np
-number = np.random.randint(1,10)
-checking = True 
-while checking:
+number = np.random.randint(1,10) 
+while True:
     guess_number = int(input("Guess the number between 1-9: "))
     if guess_number == number:
         print("Exactly right well done")
-        checking = False
+        break
     elif guess_number < number:
         print("Too low try again")
     else:
